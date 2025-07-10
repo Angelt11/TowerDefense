@@ -296,7 +296,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: a26b124d3dc2e114a956bd141850b852, type: 3}
       propertyPath: m_Name
-      value: patch-grass-foliage
+      value: TowerFloor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1134,7 +1134,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d3cfe9e767612a84494ddaaffd53f2a1, type: 3}
       propertyPath: m_Name
-      value: tower-complete-large
+      value: Tower
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1757,7 +1757,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 6e09b70092c4cf249a42d38d25c714d1, type: 3}
       propertyPath: m_Name
-      value: tower-base-door
+      value: TowerBase
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
