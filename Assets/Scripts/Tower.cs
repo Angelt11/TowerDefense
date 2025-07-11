@@ -14,6 +14,5 @@ public class Tower : MonoBehaviour
     public void Hide()
     {
         _onHidden?.Invoke();
-        gameObject.SetActive(false);
     }
 }
