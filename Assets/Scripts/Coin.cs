@@ -1,5 +1,4 @@
 using System.Collections;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -29,11 +28,13 @@ public class Coin : MonoBehaviour
     {
         StopAllCoroutines();
     }
+
     public void Collect()
     {
         StartCoroutine(DisappearCoroutine());
-        _onCoinCollected.Invoke();
+        _onCoinCollected?.Invoke();
     }
+
     private IEnumerator AppearCoroutine()
     {
         _animator.Play(_appearAnimationName);

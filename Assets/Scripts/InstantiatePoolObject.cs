@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
 
-public class InstantiatePoolObjectb : MonoBehaviour
+public class InstantiatePoolObject : MonoBehaviour
 {
     [SerializeField]
     private GameObject _prefab;
