@@ -206,6 +206,10 @@ PrefabInstance:
       propertyPath: _timeToDisappear
       value: 50
       objectReference: {fileID: 0}
+    - target: {fileID: 4288301917826453832, guid: 9c8a65429292cfe45b00d51995e81fa8, type: 3}
+      propertyPath: _rotateAnimationName
+      value: CoinLoop
+      objectReference: {fileID: 0}
     - target: {fileID: 5574006466049446927, guid: 9c8a65429292cfe45b00d51995e81fa8, type: 3}
       propertyPath: _rotationSpeed
       value: 1000
@@ -1507,6 +1511,10 @@ PrefabInstance:
       propertyPath: _timeToDisappear
       value: 50
       objectReference: {fileID: 0}
+    - target: {fileID: 4288301917826453832, guid: 9c8a65429292cfe45b00d51995e81fa8, type: 3}
+      propertyPath: _rotateAnimationName
+      value: CoinLoop
+      objectReference: {fileID: 0}
     - target: {fileID: 5574006466049446927, guid: 9c8a65429292cfe45b00d51995e81fa8, type: 3}
       propertyPath: _rotationSpeed
       value: 1000
@@ -2556,6 +2564,10 @@ PrefabInstance:
     - target: {fileID: 4288301917826453832, guid: 9c8a65429292cfe45b00d51995e81fa8, type: 3}
       propertyPath: _timeToDisappear
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 4288301917826453832, guid: 9c8a65429292cfe45b00d51995e81fa8, type: 3}
+      propertyPath: _rotateAnimationName
+      value: CoinLoop
       objectReference: {fileID: 0}
     - target: {fileID: 5574006466049446927, guid: 9c8a65429292cfe45b00d51995e81fa8, type: 3}
       propertyPath: _rotationSpeed
