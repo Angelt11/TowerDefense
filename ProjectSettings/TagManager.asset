@@ -6,6 +6,8 @@ TagManager:
   tags:
   - FxTemporaire
   - Coin
+  - Tower
+  - Enemy
   layers:
   - Default
   - TransparentFX
