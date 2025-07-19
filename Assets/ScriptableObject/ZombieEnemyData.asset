@@ -20,4 +20,4 @@ MonoBehaviour:
   primaryTargetTag: Tower
   runAnimationName: ZombieRunning
   attackAnimationName: ZombieAttack
-  dieAnimationName: ZombieDeah
+  dieAnimationName: ZombieDeath
