@@ -11,7 +11,7 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField]
     private float _positionY = 0f;
     [SerializeField]
-    private UnityEvent<Vector3> _instantiaZombie;
+    private UnityEvent<Vector3> _instantiateZombie;
     public void Initialize()
     {
         StartCoroutine(SpawnEnemies());
@@ -27,7 +27,7 @@ public class EnemySpawner : MonoBehaviour
             Vector2 direction = Random.insideUnitCircle.normalized;
             Vector3 spawnPosition = new Vector3(direction.x * _spawnRadius, 0f, direction.y * _spawnRadius);
             spawnPosition.y = _positionY;
-            _instantiaZombie?.Invoke(spawnPosition);
+            _instantiateZombie?.Invoke(spawnPosition);
             yield return new WaitForSeconds(_spawnInterval);
         }
     }

@@ -13,7 +13,7 @@ public class CoinSpawner : MonoBehaviour
     [SerializeField]
     private UnityEvent<Vector3> _instantiateCoin;
     private Coroutine _spawnCoroutine;
-    public void initialize()
+    public void Initialize()
     {
         _spawnCoroutine = StartCoroutine(SpawnCoins());
     }
