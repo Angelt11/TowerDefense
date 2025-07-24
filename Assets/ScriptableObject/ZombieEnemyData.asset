@@ -12,12 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1cfb18557d2b2149ab48d21d5bad78b, type: 3}
   m_Name: ZombieEnemyData
   m_EditorClassIdentifier: 
-  attackRange: 0.5
+  attackRange: 0.05
   attackDamage: 25
   runSpeed: 0.01
   attackDuration: 1
   attackCooldown: 1
+  attackSoundName: ZombieAttack
   primaryTargetTag: Tower
   runAnimationName: ZombieRunning
   attackAnimationName: ZombieAttack
   dieAnimationName: ZombieDeath
+  winAnimationName: Victory
