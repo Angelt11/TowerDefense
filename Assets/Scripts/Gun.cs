@@ -23,7 +23,7 @@ public class Gun : MonoBehaviour
     }
     private IEnumerator FireAtTarget()
     {
-        while (_target != null && _target.Health.CurrentHealth > 0  )
+        while (_target != null && _target.Health.CurrentHealth > 0)
         {
             _turret.LookAt(_target.transform);
             _onFire?.Invoke(_target.transform);

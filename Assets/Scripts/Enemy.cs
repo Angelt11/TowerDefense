@@ -17,7 +17,7 @@ public class Enemy : MonoBehaviour
     {
         _isRunning = false;
         _onInitialize?.Invoke();
-        GetTarget();
+        Invoke("GetTarget", 0.5f);
     }
     private void GetTarget()
     {
