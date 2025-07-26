@@ -33,7 +33,10 @@ public class Gun : MonoBehaviour
         }
         _target = null;
     }
-
+    private void OnDisable()
+    {
+        _target = null;
+    }
 }
 [System.Serializable]
 public class EnemyTarget
