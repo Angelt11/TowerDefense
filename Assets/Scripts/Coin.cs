@@ -13,7 +13,9 @@ public class Coin : MonoBehaviour
     [SerializeField]
     private float _timeToDisappear = 3f;
     [SerializeField]
-    private UnityEvent _onCoinCollected;
+    private UnityEvent<Transform> _onCoinCollected;
+    [SerializeField]
+    private int _value = 1;
     private Collider _collider;
     private void Awake()
     {
@@ -32,7 +34,7 @@ public class Coin : MonoBehaviour
     public void Collect()
     {
         StartCoroutine(DisappearCoroutine());
-        _onCoinCollected?.Invoke();
+        _onCoinCollected?.Invoke(this.transform);
     }
 
     private IEnumerator AppearCoroutine()
@@ -47,5 +49,17 @@ public class Coin : MonoBehaviour
         _animator.Play(_disappearAnimationName);
         yield return new WaitForSeconds(_animator.GetCurrentAnimatorStateInfo(0).length);
         gameObject.SetActive(false);
+    }
+    public int GetValue()
+    {
+        return _value;
+    }
+    public void OnCollectedAddListener(CoinCollectorBridge bridge)
+    {
+        _onCoinCollected.AddListener(bridge.CollectCoin);
+    }
+    public void OnCollectedRemoveAllListeners()
+    {
+        _onCoinCollected.RemoveAllListeners();
     }
 }
