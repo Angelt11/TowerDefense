@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackRange: 0.05
   attackDamage: 40
-  runSpeed: 0.05
+  runSpeed: 0.02
   attackDuration: 1
   attackCooldown: 1
   dieSoundName: 
