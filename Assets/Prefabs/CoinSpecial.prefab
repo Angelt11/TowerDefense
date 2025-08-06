@@ -160,6 +160,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   _value: 3
+  _coinSoundCollected: SM64Coin
 --- !u!114 &-6573093714761205061
 MonoBehaviour:
   m_ObjectHideFlags: 0

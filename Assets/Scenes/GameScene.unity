@@ -1057,31 +1057,7 @@ MonoBehaviour:
   _coinTag: Coin
   _onCoinPressed:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1048156133}
-        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
-        m_MethodName: Play
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Mario1Coin
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1731230371}
-        m_TargetAssemblyTypeName: InstantiatePoolObject, Assembly-CSharp
-        m_MethodName: InstantiateObject
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Mario1Coin
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!4 &340352048
 Transform:
   m_ObjectHideFlags: 0
@@ -3386,6 +3362,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 832787604}
+        m_TargetAssemblyTypeName: InstantiatePoolObject, Assembly-CSharp
+        m_MethodName: DeactivateAllObjects
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 2008493181}
         m_TargetAssemblyTypeName: InstantiatePoolObject, Assembly-CSharp
         m_MethodName: DeactivateAllObjects
@@ -3509,6 +3497,52 @@ MonoBehaviour:
   mCastedBehaviour: {fileID: 1541939052}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
+--- !u!1 &1591007911
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1591007913}
+  - component: {fileID: 1591007912}
+  m_Layer: 0
+  m_Name: InstantiateSpecialCoinParticles
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1591007912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1591007911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4610ca554fc0744f8495bdd635f6de8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _prefab: {fileID: 5880797563127281583, guid: 9025cc53ef219b74a8ffe0a27d0ce67b, type: 3}
+  _parent: {fileID: 0}
+--- !u!4 &1591007913
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1591007911}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 558.66516, y: 164.35245, z: -7.819616}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1631264655
 GameObject:
   m_ObjectHideFlags: 0
@@ -4259,7 +4293,7 @@ MonoBehaviour:
   _radius: 0.2
   _spawnRate: 2
   _positionY: 0
-  _specialCoinProbability: 0.2
+  _specialCoinProbability: 0.3
   _instantiateCoin:
     m_PersistentCalls:
       m_Calls:
@@ -4780,6 +4814,7 @@ SceneRoots:
   - {fileID: 203236389}
   - {fileID: 340352048}
   - {fileID: 1731230370}
+  - {fileID: 1591007913}
   - {fileID: 1989192936}
   - {fileID: 335133908}
   - {fileID: 1719852161}

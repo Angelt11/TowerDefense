@@ -35,7 +35,8 @@ public class GameOverManager : MonoBehaviour
     public void HideGameOver()
     {
         foreach (var button in buttonsToHide)
-        button.SetActive(true);
+            button.SetActive(true);
         gameOverPanel.SetActive(false);
+        gameOverAnimator.SetTrigger("Show");
     }
 }

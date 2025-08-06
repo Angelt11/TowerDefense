@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: KrobotEnemyData
   m_EditorClassIdentifier: 
   attackRange: 0.05
-  attackDamage: 40
+  attackDamage: 20
   runSpeed: 0.02
   attackDuration: 1
   attackCooldown: 1
@@ -22,5 +22,5 @@ MonoBehaviour:
   primaryTargetTag: Tower
   runAnimationName: KrobotRunning
   attackAnimationName: KrobotAttack
-  dieAnimationName: KrobotDie
+  dieAnimationName: KrobotDeath
   winAnimationName: Victory1

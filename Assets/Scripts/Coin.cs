@@ -4,6 +4,7 @@ using UnityEngine.Events;
 
 public class Coin : MonoBehaviour
 {
+    private InstantiatePoolObject _instantiateParticlePool;
     [SerializeField]
     private string _appearAnimationName = "CoinAppear";
     [SerializeField]
@@ -16,6 +17,8 @@ public class Coin : MonoBehaviour
     private UnityEvent<Transform> _onCoinCollected;
     [SerializeField]
     private int _value = 1;
+    [SerializeField]
+    private string _coinSoundCollected = "CoinCollected";
     private Collider _collider;
     private void Awake()
     {
@@ -33,6 +36,14 @@ public class Coin : MonoBehaviour
 
     public void Collect()
     {
+        if (!string.IsNullOrEmpty(_coinSoundCollected))
+        {
+            SoundManager.instance.Play(_coinSoundCollected);
+        }
+        if (_instantiateParticlePool != null)
+        {
+            _instantiateParticlePool.InstantiateObject(transform.position);
+        }
         StartCoroutine(DisappearCoroutine());
         _onCoinCollected?.Invoke(this.transform);
     }
@@ -61,5 +72,9 @@ public class Coin : MonoBehaviour
     public void OnCollectedRemoveAllListeners()
     {
         _onCoinCollected.RemoveAllListeners();
+    }
+    public void SetParticlePool(InstantiatePoolObject pool)
+    {
+        _instantiateParticlePool = pool;
     }
 }

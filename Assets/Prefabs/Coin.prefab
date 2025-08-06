@@ -156,6 +156,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   _value: 1
+  _coinSoundCollected: Mario1Coin
 --- !u!114 &-6573093714761205061
 MonoBehaviour:
   m_ObjectHideFlags: 0
