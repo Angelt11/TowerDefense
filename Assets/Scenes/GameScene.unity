@@ -1612,6 +1612,7 @@ MonoBehaviour:
   gameOverPanel: {fileID: 1667300299}
   gameOverAnimator: {fileID: 1667300301}
   coinSpawner: {fileID: 1920204544}
+  towerAnimator: {fileID: 2102519918}
   enemySpawners:
   - {fileID: 1666744784}
   buttonsToHide:
@@ -3541,6 +3542,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1631264655}
   m_CullTransparentMesh: 1
+--- !u!1 &1637904864 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 6e09b70092c4cf249a42d38d25c714d1, type: 3}
+  m_PrefabInstance: {fileID: 2102519914}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1666207005
 GameObject:
   m_ObjectHideFlags: 0
@@ -4427,23 +4433,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6e09b70092c4cf249a42d38d25c714d1, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6e09b70092c4cf249a42d38d25c714d1, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: -0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6e09b70092c4cf249a42d38d25c714d1, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6e09b70092c4cf249a42d38d25c714d1, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6e09b70092c4cf249a42d38d25c714d1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
+      value: -90
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6e09b70092c4cf249a42d38d25c714d1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -4455,7 +4461,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6e09b70092c4cf249a42d38d25c714d1, type: 3}
       propertyPath: m_ConstrainProportionsScale
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 6e09b70092c4cf249a42d38d25c714d1, type: 3}
       propertyPath: m_Name
@@ -4471,13 +4477,38 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 6e09b70092c4cf249a42d38d25c714d1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1024442614}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 6e09b70092c4cf249a42d38d25c714d1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2102519918}
   m_SourcePrefab: {fileID: 100100000, guid: 6e09b70092c4cf249a42d38d25c714d1, type: 3}
 --- !u!4 &2102519915 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 6e09b70092c4cf249a42d38d25c714d1, type: 3}
   m_PrefabInstance: {fileID: 2102519914}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &2102519918
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1637904864}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6963ad0c03483ce46bed4e3b1549c3b8, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &2108879030
 GameObject:
   m_ObjectHideFlags: 0
